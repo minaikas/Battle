@@ -165,46 +165,5 @@ int main(int argc, char** argv)
     return 0;
 } 
 
-// int main(int argc, char** argv) 
-// {
-//     if (!glfwInit()) {
-//         std::cerr << "Failed to initialize GLFW" << std::endl;
-//         return -1;
-//     }
 
-//     GLFWwindow* window = glfwCreateWindow(g_windowSizeX, g_windowSizeY, "OpenGL Window", nullptr, nullptr);
-//     if (!window) {
-//         std::cerr << "Failed to create GLFW window" << std::endl;
-//         glfwTerminate();
-//         return -1;
-//     }
-
-//     glfwMakeContextCurrent(window);
-//     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
-//         std::cerr << "Failed to initialize GLAD" << std::endl;
-//         return -1;
-//     }
-
-//     ResourceManager resourceManager(argv[0]);
-//     auto shaderProgram = resourceManager.loadShaders("DefaultShader", "res/shaders/vertex.txt", "res/shaders/fragment.txt");
-//     if (!shaderProgram) {
-//         std::cerr << "Failed to load shaders" << std::endl;
-//         return -1;
-//     }
-
-//     shaderProgram->use();
-
-//     // Основной цикл
-//     while (!glfwWindowShouldClose(window)) {
-//         glClear(GL_COLOR_BUFFER_BIT);
-
-//         // Рендеринг
-
-//         glfwSwapBuffers(window);
-//         glfwPollEvents();
-//     }
-
-//     glfwTerminate();
-//     return 0;
-// }
 
